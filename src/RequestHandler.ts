@@ -1,6 +1,5 @@
 import fetch, { Headers, Response } from 'node-fetch';
 import { URL } from 'whatwg-url';
-import { v4 as uuidv4 } from 'uuid';
 
 export class RequestHandler {
     token: string;
@@ -60,8 +59,7 @@ export class RequestHandler {
                 ...options,
                 headers: {
                     ...options.headers,
-                    'Content-Type': 'application/json',
-                    'X-Request-Id': uuidv4()
+                    'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(body)
             }
