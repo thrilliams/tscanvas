@@ -1,0 +1,24 @@
+{
+  "name": "tscanvas",
+  "version": "1.0.0",
+  "description": "a typescript wrapper around the canvas lms api",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "start": "./node_modules/.bin/tsc && node ./lib/index.js",
+    "build": "./node_modules/.bin/tsc",
+    "build:check": "./node_modules/.bin/tsc --noEmit"
+  },
+  "license": "ISC",
+  "author": "Soren Williams <soren@aethre.co>",
+  "dependencies": {
+    "node-fetch": "^2.6.2",
+    "whatwg-url": "^9.1.0",
+    "zod": "^3.8.2"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.5.12",
+    "@types/whatwg-url": "^8.2.1",
+    "typescript": "^4.4.3"
+  }
+}
